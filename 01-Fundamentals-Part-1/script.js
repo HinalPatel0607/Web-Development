@@ -65,3 +65,47 @@ job = "Software Developer";
 
 lastName = "Patel";
 console.log(lastName);
+
+//Basic Operators
+
+//Math operators or Arithmetic operators
+
+const now = 2045;
+const ageHinal = now - 1995;
+const ageNishit = now - 1998;
+console.log(ageHinal, ageNishit);
+
+console.log(ageHinal * 2, ageHinal / 10, 2 ** 3);
+
+const fNmae = "Hinal";
+const lNAme = "Patel";
+console.log(fNmae + " " + lNAme);
+
+//Assignemet Operators.
+let x = 10 + 5;
+console.log(x);
+
+x += 10;
+console.log(x);
+
+x *= 4;
+console.log(x);
+
+x++;
+console.log(x);
+
+x--;
+console.log(x);
+
+x--;
+console.log(x);
+
+//Comparision operator
+
+console.log(ageHinal > ageNishit);
+console.log(ageNishit >= 18);
+
+const isFullAge = ageNishit >= 18;
+console.log(isFullAge);
+
+console.log(now - 1995 > now - 1998);

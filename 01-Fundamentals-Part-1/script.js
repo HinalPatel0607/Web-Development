@@ -24,3 +24,27 @@ let myFirstJob = "Wen Analyst";
 let myCurrentJob = "Software Developer";
 
 console.log(myCurrentJob);
+
+//Datatypes
+
+let javaScriptIsFun = true;
+console.log(javaScriptIsFun);
+
+console.log(typeof true);
+console.log(typeof javaScriptIsFun);
+console.log(typeof 3.14);
+console.log(typeof 27);
+console.log(typeof "Hinal");
+
+javaScriptIsFun = "YES!";
+console.log(typeof javaScriptIsFun);
+
+let year;
+console.log(year);
+console.log(typeof year);
+
+year = 1995;
+console.log(typeof year);
+
+let a = null;
+console.log(typeof null);

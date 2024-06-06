@@ -20,7 +20,7 @@ let $function = 27;
 let person = "Hinal";
 let PI = 3.14;
 
-let myFirstJob = "Wen Analyst";
+let myFirstJob = "Web Analyst";
 let myCurrentJob = "Software Developer";
 
 console.log(myCurrentJob);
@@ -48,3 +48,20 @@ console.log(typeof year);
 
 let a = null;
 console.log(typeof null);
+
+//let, const and var
+
+let age = 30;
+age = 31;
+console.log(age);
+
+const birthYear = 1995;
+//birthYear = 1996;
+console.log(birthYear);
+//const job;
+
+var job = "Web Analyst";
+job = "Software Developer";
+
+lastName = "Patel";
+console.log(lastName);

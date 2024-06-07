@@ -109,3 +109,12 @@ const isFullAge = ageNishit >= 18;
 console.log(isFullAge);
 
 console.log(now - 1995 > now - 1998);
+
+//Operator Precedence
+
+let p, q;
+p = q = 25 - 10 - 5;
+console.log(p, q);
+
+const averageAge = (ageHinal + ageNishit) / 2;
+console.log(ageHinal, ageNishit, averageAge);

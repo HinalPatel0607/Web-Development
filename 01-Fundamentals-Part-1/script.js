@@ -159,3 +159,24 @@ console.log(
 console.log(`String with
     mulitiple
     lines`);
+
+//If-else
+
+const agee = 12;
+if (agee >= 18) {
+  console.log("Hinal is eligible for driver's licence 🚗🚗");
+} else {
+  const yearsLeft = 18 - agee;
+  console.log(
+    `Hinal is still not eligible for driver's licence. Wait for another ${yearsLeft} years ☹☹.`
+  );
+}
+
+const yaerOfBirth = 2012;
+let century;
+if (yaerOfBirth <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);

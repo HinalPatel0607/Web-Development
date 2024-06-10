@@ -118,3 +118,44 @@ console.log(p, q);
 
 const averageAge = (ageHinal + ageNishit) / 2;
 console.log(ageHinal, ageNishit, averageAge);
+
+//Strings and Template literals
+
+console.log(firstName);
+console.log(job);
+console.log(birthYear);
+const currentYear = 2024;
+
+const finalString =
+  "I'm" +
+  " " +
+  firstName +
+  " " +
+  ", a" +
+  " " +
+  (currentYear - birthYear) +
+  " " +
+  "years old" +
+  " " +
+  job +
+  "!";
+console.log(finalString);
+
+const newFinalString = `I'm ${firstName}, a ${
+  currentYear - birthYear
+} years old ${job}!`;
+console.log(newFinalString);
+
+console.log(
+  `This is just a regular string. I can ba also encolsed with backticks apart from single and double quotes.`
+);
+
+console.log(
+  "Srring with \n\
+    multiple \n\
+    lines"
+);
+
+console.log(`String with
+    mulitiple
+    lines`);

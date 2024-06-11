@@ -180,3 +180,30 @@ if (yaerOfBirth <= 2000) {
   century = 21;
 }
 console.log(century);
+
+//Type Conversion
+
+const inputYear = "1995";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Hinal"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//Type Coercion
+console.log(`I am 23 years old`);
+console.log("I am " + 23 + " yeras old");
+
+console.log("23" + "10" + "3");
+console.log("23" - "10" - "3");
+console.log("23" * "2");
+console.log("23" / "2");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + "5");
+console.log("10" - "4" - "3" - 2 + "5");

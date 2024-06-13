@@ -254,3 +254,27 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("Why not 23?");
+
+//Logical operators
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoodVision) {
+  console.log("Hinal is able to drive.");
+} else {
+  console.log("Someone else should drive.");
+}
+
+const isTired = false;
+console.log(hasDriversLicense && hasDriversLicense && isTired);
+
+if (hasDriversLicense && hasDriversLicense && !isTired) {
+  console.log("Hinal is able to drive");
+} else {
+  console.log("Someone else should drive");
+}

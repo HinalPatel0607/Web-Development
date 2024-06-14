@@ -320,3 +320,16 @@ if (day === "Monday") {
 } else {
   console.log("Not a valid day");
 }
+//Statements and Expression
+
+console.log(3 + 4);
+console.log(1995);
+console.log(true && false && !false);
+
+if (23 > 10) {
+  const str = "23 is bigger";
+  console.log(str);
+}
+
+const me = "Hinal";
+console.log(`I'm ${2025 - 1995} years old ${me}.`);

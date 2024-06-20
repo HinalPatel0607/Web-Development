@@ -48,3 +48,26 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1995);
 console.log(age2);
+
+//Arrow function
+
+const clacAge3 = (birthYear) => 2024 - birthYear;
+const age3 = clacAge3(1995);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear) => {
+  const age = 2024 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
+};
+
+console.log(yearsUntilRetirement(1995));
+
+const retirementYears = (birthYear, firstName) => {
+  const age = 2024 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(retirementYears(1995, "Hinal"));
+console.log(retirementYears(1981, "XYZ"));

@@ -29,3 +29,22 @@ const appleOrnageJuice = foodProcessor(3, 4);
 console.log(appleOrnageJuice);
 
 const num = Number("23");
+
+//Function Declaration vs Function Expression
+
+//Function Declaration
+
+function calcAge1(birthYear) {
+  return 2024 - birthYear;
+}
+
+const age1 = calcAge1(1995);
+console.log(age1);
+
+//Function Expression
+const calcAge2 = function (birthYear) {
+  return 2024 - birthYear;
+};
+
+const age2 = calcAge2(1995);
+console.log(age2);

@@ -79,3 +79,30 @@ const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 console.log(`Bill: ${bill}\n\
 Tip: ${tip}\n\
 Total: ${bill + tip}`);
+
+//Coding Challenge 5
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(3, 4, 5));
+
+let scoreD = calcAverage(44, 23, 71);
+let scoreK = calcAverage(65, 54, 49);
+console.log(scoreD, scoreK);
+
+const checkWinner = function (avgDolpin, avgKoalas) {
+  if (avgDolpin >= 2 * avgKoalas) {
+    console.log(`Dolphins won the trophy 🏆 (${avgDolpin} vs. ${avgKoalas}).`);
+  } else if (avgKoalas >= 2 * avgDolpin) {
+    console.log(`Koalas won the trophy 🏆 (${avgDolpin} vs. ${avgKoalas}).`);
+  } else {
+    console.log("No team won the trophy");
+  }
+};
+
+checkWinner(scoreD, scoreK);
+checkWinner(576, 111);
+
+scoreD = calcAverage(85, 54, 41);
+scoreK = calcAverage(23, 34, 27);
+console.log(scoreD, scoreK);
+checkWinner(scoreD, scoreK);

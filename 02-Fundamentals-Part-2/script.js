@@ -71,3 +71,16 @@ const retirementYears = (birthYear, firstName) => {
 
 console.log(retirementYears(1995, "Hinal"));
 console.log(retirementYears(1981, "XYZ"));
+
+//Function calling anaother Function
+
+function cutPieces(fruit) {
+  return fruit * 4;
+}
+function foodProcessors(apples, oranges) {
+  const applepieces = cutPieces(apples);
+  const orangepieces = cutPieces(oranges);
+  const juice = `Juice with ${applepieces} apple pieces and ${orangepieces} orange pieces.`;
+  return juice;
+}
+console.log(foodProcessors(4, 5));

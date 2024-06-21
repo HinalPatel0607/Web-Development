@@ -84,3 +84,23 @@ function foodProcessors(apples, oranges) {
   return juice;
 }
 console.log(foodProcessors(4, 5));
+
+//Reviewing function
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+const yearsTillRetirement = function (birthYear, firstName) {
+  const agee = calcAge(birthYear);
+  const retirementt = 65 - agee;
+
+  if (retirementt > 0) {
+    console.log(`${firstName} retires in ${retirementt} years`);
+    return retirementt;
+  } else {
+    console.log(`${firstName} has already retired.`);
+  }
+  return -1;
+};
+
+console.log(yearsTillRetirement(1991, "Jonas"));
+console.log(yearsTillRetirement(1950, "Mike"));

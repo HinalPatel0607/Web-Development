@@ -104,3 +104,49 @@ const yearsTillRetirement = function (birthYear, firstName) {
 
 console.log(yearsTillRetirement(1991, "Jonas"));
 console.log(yearsTillRetirement(1950, "Mike"));
+
+//Introduction to Arrays
+const friend1 = "Michael";
+const friend2 = "Steven";
+const freind3 = "Pater";
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+//We cannot assign whole array
+//friends = ["Bob", "Alice"];
+
+const y = new Array(1991, 1984, 2008, 2020);
+console.log(y);
+
+const firstNamee = "Jonas";
+const Jonas = [firstNamee, "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(Jonas);
+console.log(Jonas.length);
+
+const calculateAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+const agee1 = calculateAge(years[0]);
+const agee2 = calculateAge(years[1]);
+const agee3 = calculateAge(years[2]);
+const agee4 = calculateAge(years[years.length - 1]);
+console.log(agee1, agee2, agee3, agee4);
+const ages = [
+  calculateAge(years[0]),
+  calculateAge(years[1]),
+  calculateAge(years[2]),
+  calculateAge(years[years.length - 1]),
+];
+console.log(ages);

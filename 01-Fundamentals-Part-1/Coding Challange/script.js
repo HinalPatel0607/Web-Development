@@ -106,3 +106,20 @@ scoreD = calcAverage(85, 54, 41);
 scoreK = calcAverage(23, 34, 27);
 console.log(scoreD, scoreK);
 checkWinner(scoreD, scoreK);
+
+//Coding Challenge 6
+
+const calculateTip = function (invoice) {
+  return invoice >= 50 && invoice <= 300 ? invoice * 0.15 : invoice * 0.2;
+};
+
+const bills = [125, 555, 44];
+const tips = [
+  calculateTip(bills[0]),
+  calculateTip(bills[1]),
+  calculateTip(bills[2]),
+];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills);
+console.log(tips);
+console.log(totals);

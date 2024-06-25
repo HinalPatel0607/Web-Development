@@ -182,3 +182,22 @@ console.log(friends.includes(23));
 if (friends.includes("Steven")) {
   console.log("You have a friend called Steven");
 }
+
+//Introduction to Objects
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 2019,
+  "teacher",
+  ["Miachel", "Pater", "Jay"],
+];
+
+const jonass = {
+  fName: "Jonas",
+  lName: "Schmedtmann",
+  numberOfYeras: 2037 - 2019,
+  job: "teacher",
+  batchMates: ["Miachel", "Jay", "Pater"],
+};
+
+console.log(jonass);

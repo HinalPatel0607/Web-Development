@@ -195,9 +195,41 @@ const jonasArray = [
 const jonass = {
   fName: "Jonas",
   lName: "Schmedtmann",
-  numberOfYeras: 2037 - 2019,
+  numberOfYears: 2037 - 2019,
   job: "teacher",
   batchMates: ["Miachel", "Jay", "Pater"],
 };
 
 console.log(jonass);
+
+//Dot vs Bracket Notation
+console.log(jonass.lName);
+console.log(jonass["lName"]);
+
+const nameKey = "Name";
+console.log(jonass["f" + nameKey]);
+console.log(jonass["l" + nameKey]);
+
+//console.log(jonass.'l'+ nameKey) It won't work with dot notation
+
+const interstedIn = prompt(
+  "What do you want to know about Jonas? Choose between fName, lName, numberOfYears, job, and batchMates"
+);
+
+if (jonass[interstedIn]) {
+  console.log(jonass[interstedIn]);
+} else {
+  console.log(
+    "Wrong Request! Choose between fName, lName, numberOfYears, job, and batchMates"
+  );
+}
+
+jonass.location = "Portugal";
+jonass["twitter"] = "@jonasschmedtman";
+console.log(jonass);
+
+// "Jonas has 3 friends, and his best friend is called Michael"
+
+console.log(
+  `${jonass.fName} has ${jonass.batchMates.length} friends, and his best friend is called ${jonass.batchMates[0]}.`
+);

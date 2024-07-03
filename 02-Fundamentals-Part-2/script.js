@@ -233,3 +233,44 @@ console.log(jonass);
 console.log(
   `${jonass.fName} has ${jonass.batchMates.length} friends, and his best friend is called ${jonass.batchMates[0]}.`
 );
+
+//Object Methods/Functions/this keyword\
+
+const Hinal = {
+  firstName: "Hinal",
+  lastName: "Patel",
+  birthYear: 1995,
+  job: "Software Developer",
+  friends: ["abc", "pqr", "xyz"],
+  hasDriversLicence: true,
+
+  /* calcAge: function (birthYear) {
+    return 2024 - 1995;
+  },
+ */
+  /*   calcAge: function () {
+    console.log(this);
+    return 2024 - this.birthYear;
+  }, */
+
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      this.job
+    }, and she has ${this.hasDriversLicence ? "a" : "no"} driver's license.`;
+  },
+};
+
+console.log(Hinal.calcAge());
+console.log(Hinal.age);
+console.log(Hinal.age);
+console.log(Hinal.age);
+
+// Challenge
+// "Jonas is a 29-year old Software Developer, and she has a driver's license."
+
+console.log(Hinal.getSummary());

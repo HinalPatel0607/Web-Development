@@ -274,3 +274,20 @@ console.log(Hinal.age);
 // "Jonas is a 29-year old Software Developer, and she has a driver's license."
 
 console.log(Hinal.getSummary());
+
+//Iteration for loop
+
+console.log("Lifting weight repetition 1 💪");
+console.log("Lifting weight repetition 2 💪");
+console.log("Lifting weight repetition 3 💪");
+console.log("Lifting weight repetition 4 💪");
+console.log("Lifting weight repetition 5 💪");
+console.log("Lifting weight repetition 6 💪");
+console.log("Lifting weight repetition 7 💪");
+console.log("Lifting weight repetition 8 💪");
+console.log("Lifting weight repetition 9 💪");
+console.log("Lifting weight repetition 10 💪");
+
+for (let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weight repetition ${rep} 💪`);
+}

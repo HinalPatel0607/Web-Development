@@ -291,3 +291,50 @@ console.log("Lifting weight repetition 10 💪");
 for (let rep = 1; rep <= 30; rep++) {
   console.log(`Lifting weight repetition ${rep} 💪`);
 }
+
+//Looping Arrays, Breaking and Continuing
+
+const Hinall = [
+  "Hinal",
+  "Patel",
+  1995,
+  "Software Developer",
+  ["abc", "pqr", "xyz"],
+  true,
+];
+
+const type = [];
+
+for (let i = 0; i < Hinall.length; i++) {
+  //Reading for Hinall Array
+  console.log(Hinall[i], typeof Hinall[i]);
+
+  //Filling the array type
+  //type[i] = typeof Hinall[i];
+  type.push(typeof Hinall[i]);
+}
+
+console.log(type);
+
+const birthhYear = [1991, 2007, 1969, 2020];
+const aage = [];
+
+for (let i = 0; i < birthhYear.length; i++) {
+  aage.push(2024 - birthhYear[i]);
+}
+
+console.log(aage);
+
+//Continue and Break
+
+console.log(`---Only Strings---`);
+for (let i = 0; i < Hinall.length; i++) {
+  if (typeof Hinall[i] !== "string") continue;
+  console.log(Hinall[i], typeof Hinall[i]);
+}
+
+console.log(`---Break with Numbers---`);
+for (let i = 0; i < Hinall.length; i++) {
+  if (typeof Hinall[i] === "number") break;
+  console.log(Hinall[i], typeof Hinall[i]);
+}

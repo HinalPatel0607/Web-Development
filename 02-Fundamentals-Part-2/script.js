@@ -351,3 +351,21 @@ for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`Exercise: ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️🏋️‍♀️`);
   }
 }
+
+//While loop
+
+let reep = 1;
+while (reep <= 10) {
+  console.log(`WHILE: Lifting weight repetition ${reep} 🏋️‍♂️🏋️‍♀️`);
+  reep++;
+}
+
+let dice = Math.trunc(Math.random() * 6 + 1);
+
+while (dice !== 6) {
+  console.log(`You rolled a dice ${dice}`);
+  dice = Math.trunc(Math.random() * 6 + 1);
+  if (dice === 6) {
+    console.log(`Loop is about to end....`);
+  }
+}
